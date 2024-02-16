@@ -1,4 +1,4 @@
-import React, { useState,useEffect } from 'react';
+import  { useState,useEffect } from 'react';
 import { Drawer, List, ListItem, ListItemIcon, ListItemText, Typography, Box, Card, CardContent, Grid } from '@mui/material';
 import { Home, Info, ContactMail, Dashboard } from '@mui/icons-material';
 
@@ -53,7 +53,8 @@ function App() {
 
   useEffect(() => {
     const interval = setInterval(() => {
-      axios.get('http://localhost:8080/get/j001')
+      // axios.get('http://localhost:8080/get/j001')
+      axios.get('https://orca-app-mq9b5.ondigitalocean.app/get/j001')
       .then((response) => {
         console.log(response.data);
         // cardData.map((card, index) => {
